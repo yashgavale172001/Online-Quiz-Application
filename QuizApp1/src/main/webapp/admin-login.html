@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | Online Quiz App</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #e0eafc, #cfdef3); /* Soft Blue Gradient */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .admin-login-container {
+            background-color: #ffffff;
+            width: 350px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .admin-login-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            margin-bottom: 20px;
+        }
+
+        .input-field label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .input-field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .input-field input:focus {
+            border-color: #8ab6d6;
+            box-shadow: 0 0 5px rgba(138, 182, 214, 0.5);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #8ab6d6; /* Calm Blue */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #769ebe;
+            box-shadow: 0 4px 10px rgba(138, 182, 214, 0.5);
+        }
+
+        .back-btn {
+            display: inline-block;
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ccc; /* Neutral Gray */
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #b3b3b3;
+            color: #000;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .footer a {
+            color: #8ab6d6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-login-container">
+        <h2>Admin Login</h2>
+        <form action="AdminLogin">
+            <div class="input-field">
+                <label for="adminName">Admin Name</label>
+                <input type="text" id="adminName" name="adminName" placeholder="Enter your name" required>
+            </div>
+            <div class="input-field">
+                <label for="adminPassword">Password</label>
+                <input type="password" id="adminPassword" name="adminPassword" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <a href="login.jsp" class="back-btn">Back</a>
+    </div>
+</body>
+</html>
